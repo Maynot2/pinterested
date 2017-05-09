@@ -23,7 +23,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'bootstrap-sass', '>= 3.3.7'
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 4.3.1'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -35,18 +35,19 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'devise', ' ~> 4.2.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'binding_of_caller'
-  gem 'better_errors'
-  gem "sqlite3"
-  gem 'listen'
+  gem 'binding_of_caller', '~> 0.7.2'
+  gem 'better_errors', '~> 2.1.1'
+  gem "sqlite3", '~> 1.3.13'
+  gem 'listen', '~> 3.0.8'
 end
 
 group :production do
-  gem 'pg'
-  gem 'rails_12factor'
+  gem 'pg', '0.20.0'
+  gem 'rails_12factor', '0.0.3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
